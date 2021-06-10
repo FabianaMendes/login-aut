@@ -1,13 +1,32 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { 
+    Container, 
+    FormTitle,
+    LockImg,
+    Span 
+} from './styles';
+
+import lock from '../../assets/lock.svg';
 
 const LoginForm: React.FC = () => {
     return(
         <Container>
-            <form action="" method="" id="login">
+            <FormTitle><LockImg src={lock} alt="lock.img"/>Logg</FormTitle>
+                <form action="" method="" id="login">
+                    <fieldset form="login">
+                        <legend>Please <b>Login</b> or <b>Register</b></legend>
 
-            </form>
+                        <label htmlFor="email">Email</label>
+                        <input type="email" id="email" name="email"/>
+
+                        <label htmlFor="password">Password</label>
+                        <input type="password" id="password" name="password"/>
+
+                        <button type="submit" form="login">LOGIN</button>
+                    </fieldset>
+                </form>
+            <Span>Don't have an account? <a href="#">Register now</a></Span>
         </Container>
     );
 }
