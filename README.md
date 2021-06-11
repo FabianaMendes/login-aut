@@ -14,12 +14,13 @@
 
 ## Description
 **Login app**
+
 Pages/Routes:
 - Login
 - Register
 - Home
-After registration and once logged in, the user will be redirected to home page and will get access to private routes.
-The register page will have validations and the login will be authenticated.
+
+After registration and once logged in, the user will be redirected to home page and will get access to private routes. The register page will have validations and the login will be authenticated.
 
 
 
