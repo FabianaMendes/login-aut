@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    background-color: rgba(10, 10, 10, 0.8);
+    background-color: rgba(10, 10, 10, 0.9);
 
     padding: 20px 40px;
     width: 40vw;
@@ -28,6 +28,10 @@ export const Container = styled.div`
         border-radius: 5px;
         padding: 12px;
         margin-bottom: 10px;
+
+        &:focus {
+            transform: scale(1.03);
+        }
     }
     button {
         background: #406080;

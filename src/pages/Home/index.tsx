@@ -1,14 +1,13 @@
 import React from 'react';
-import LoginForm from '../LoginForm';
 
 import { Container } from './styles';
 
-const Layout: React.FC = () => {
+const Home: React.FC = () => {
     return(
         <Container>
-            <LoginForm />
+            <h1>Home</h1>
         </Container>
     );
 }
 
-export default Layout;
+export default Home;
